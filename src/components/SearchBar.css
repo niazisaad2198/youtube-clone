@@ -1,6 +1,9 @@
 .form-group{
     background-color: rgb(255, 0, 0);
     padding-bottom: 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 .searchbar-width{
     width: 98%;
@@ -16,3 +19,4 @@
     font-weight: 500;
     font-size: large;
 }
+

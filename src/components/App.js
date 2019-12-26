@@ -6,7 +6,7 @@ import VideoDetail from './VideoDetail';
 const axios = require('axios');
 
 
-const KEY = 'AIzaSyDilFopP0yeDV3eDo08vajcWqktfhWRQCI';
+const KEY = 'AIzaSyATj_NCeL7j5JBHSWDeanvw1xMG0-dZkCs';
 
 class App extends React.Component{
     state = {videos:[], selectedVideo: null};
@@ -39,8 +39,10 @@ onVideoSelect = (video)=>{
     render(){
         return(
             <div>
-                <SearchBar onFormSubmit = {this.onTermSubmit}/>
-                <div className="container-fluid">
+                <div>
+                    <SearchBar onFormSubmit = {this.onTermSubmit}/>
+                </div>
+                <div className="container-fluid" style={{position:'relative', top:'150px'}}>
                     <div className="row">
                         <div className="col-9">
                             <VideoDetail video={this.state.selectedVideo}/>

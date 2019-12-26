@@ -15,9 +15,9 @@ console.log(videoSrc);
     }
     else{
         return(
-            <div style={{width:'901px'}} className="card">
+            <div style={{position:'fixed',width:'60%',height:'40px'}} className="card">
                 <div className="card-image-top">
-                    <iframe style={{ width:"900px", height:'508px'}} src={videoSrc+video.id.videoId}/>
+                    <iframe style={{ width:"100%", height:'420px'}} src={videoSrc+video.id.videoId}/>
                 </div>
                 <div className="card-body">
                     <h4 className="card-title">{video.snippet.title}</h4>
